@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:elevation="32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama"/>
+
+        <TextView
+            android:id="@+id/tv_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lokasi"/>
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="deskripsi"/>
+
+        <TextView
+            android:id="@+id/tv_koordinat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_below="@id/iv_foto"
+            >
+            <Button
+                android:id="@+id/btn_ubah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ubah"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                />
+            <Button
+                android:id="@+id/btn_hapus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hapus"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                />
+            <Button
+                android:id="@+id/btn_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="detail"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
